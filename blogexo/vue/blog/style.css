@@ -1,0 +1,126 @@
+/*CSS*/
+
+/******** GENERAL ********/
+
+/*RESET*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  color: black;
+  font-size: 1em;
+}
+
+.fonce{
+  background-color: #343432;
+}
+
+.beige{
+  color: #D3AD93;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/********* HEADER *********/
+
+header{
+  color: white;
+  padding: 20px 80px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainbar ul{
+  list-style-type: none;
+}
+
+.mainbar ul li{
+  display: inline;
+  margin: 0 15px;
+}
+
+
+/*********** BANNIERE **************/
+
+.ban{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 400px;
+  background: url('bg.jpg') center;
+  background-size: cover;
+  height: 400px;
+  text-shadow: 2px 2px 8px black;
+}
+
+/************* MAIN PAGE **********/
+
+.content{
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+
+}
+
+/************* SECTION ARTICLES ************/
+
+.articles{
+  background-color: red;
+  width: 60%;
+  padding: 0 80px;
+}
+
+.maintitle{
+  text-align: center;
+  padding: 10px;
+}
+
+.news{
+  margin: 10px 0;
+  border: 1px solid #D3AD93;
+  padding: 20px;
+  /*display: flex;
+  flex-direction: column;*/
+
+}
+
+.articleTitle{
+  text-align: center;
+}
+
+.news a{
+  padding: 5px;
+}
+
+/************* SECTION CAT ************/
+
+.cat{
+  background-color: green;
+  width: 20%;
+}
+
+/*** categories *****/
+
+.categories{
+  padding: 100px;
+  text-align: center;
+}
+
+/*********** FOOTER **********/
+
+footer{
+  height: 200px;
+  text-align: center;
+
+}
