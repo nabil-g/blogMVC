@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Mon blog</title>
-    <!-- Bien penser à mettre le chemin depuis la où est généré la page finale -->
+    <!-- Bien penser à mettre le chemin depuis la où est généré la page finale (donc depuis le répertoire du controleur global)-->
     <link rel="stylesheet" href="vue/blog/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
   </head>
   <body>
     <header class="fonce">
@@ -34,7 +38,7 @@
       </section>
 
       <section class="cat">
-        <div class="categories fonce beige">
+        <div class="categories fonce beige" id="my-sticky-element">
           <h3 id="catTitle">
             Catégories
           </h3>
@@ -57,5 +61,15 @@
      </p>
 
    </footer>
+   <script type="text/javascript">
+     var controller = new ScrollMagic.Controller();
+
+     new ScrollMagic.Scene({
+             duration: 1000,    // la scène va durer sur une distance de défilement de 1000px (dans la limite de la taille de son parent)
+             offset: 200        // cette scène commence après avoir fait défiler **px
+         })
+         .setPin("#my-sticky-element") // accroche l'élément pour la durée de la scène
+         .addTo(controller); // attribue la scène au contrôleur
+   </script>
   </body>
 </html>
