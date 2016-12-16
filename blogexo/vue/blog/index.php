@@ -28,16 +28,17 @@
         <h2 class="fonce beige maintitle">Derniers articles du blog</h2>
         <?php
         foreach ($billets as $billet) {
-          echo '<div class="news"><h2 class="articleTitle">' . $billet['titre'] . '</h2><p class="beige">' . $billet['date_creation_fr'] . '</p><p>' . $billet['contenu'] . '<br><a  class="fonce beige" href="#">Lire la suite</a></p></div>';
+          echo '<div class="news"><h2 class="articleTitle">' . $billet['titre'] . '</h2><p class="beige">' . $billet['date_creation_fr'] . '</p><p>' . $billet['contenu'] . '</p><a  class="fonce beige" href="#">Lire la suite</a></div>';
         }
          ?>
       </section>
 
       <section class="cat">
         <div class="categories fonce beige">
-          <h3>
+          <h3 id="catTitle">
             Catégories
           </h3>
+          <hr>
           <ul>
             <li><a href="#">Catégorie 1</a></li>
             <li><a href="#">Catégorie 2</a></li>
